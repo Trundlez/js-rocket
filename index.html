@@ -1,5 +1,41 @@
-hello js rocket
-
-<script type="text/javascript">
-	console.log("hello there friends!")
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Rocket</title>
+	<script type="text/javascript">
+		var car = {
+			make: "VW",
+			type: "Polo",
+			color: "blue",
+			isTurnedOn: false,
+			numberOfWheels: 4,
+			seats: [
+				"seat 1",
+			 	"seat 2",
+			 	"seat 3",
+			 	"seat 4"
+			 	],
+			turnOn: function () {
+				this.isTurnedOn = true;
+			},
+			fly: function () {
+				alert("fly");
+			},
+			switchCar: function (isOn) {
+				console.log("turn car "+isOn);
+				if (isOn == true) {
+					this.isTurnedOn = true;
+				} else {
+					this.isTurnedOn = false;
+				}
+			}
+		};
+		console.log("hello there friends!")
 </script>
+</head>
+<body>
+	<h1>hello js rocket</h1>
+</body>
+</html>
