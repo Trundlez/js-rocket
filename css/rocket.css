@@ -18,7 +18,18 @@ body{
 
 a.button{
 	display: inline-block;
-	background-color: white;
+	background-color: green;
+	color: black;
+	padding: 20px 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 10px;
+	transition: color 300ms;
+}
+
+a.abortButton{
+	display: inline-block;
+	background-color: maroon;
 	color: black;
 	padding: 20px 40px;
 	text-decoration: none;

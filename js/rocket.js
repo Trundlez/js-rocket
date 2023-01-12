@@ -14,14 +14,14 @@ var changeState = function (state) {
 			if(countdownNumber >4 && countdownNumber <= 7) {
 				//be nervous
 				document.getElementById("nervous").className = "nervous show";
-			} else{
+			}else{
 				document.getElementById("nervous").className = "nervous"
 			}
 
 			if (countdownNumber >1 && countdownNumber <= 4) {
 				//I can't wait
 				document.getElementById("cant-wait").className = "cant-wait show";
-			} else{
+			}else{
 				document.getElementById("cant-wait").className = "cant-wait";
 			}
 
