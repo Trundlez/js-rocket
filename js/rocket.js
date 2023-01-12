@@ -11,9 +11,23 @@ var changeState = function (state) {
 		timer = setInterval(function () {countdownNumber = countdownNumber -1;
 			document.getElementById("countdown").innerHTML = countdownNumber;
 			
+			if(countdownNumber >4 && countdownNumber <= 7) {
+				//be nervous
+				document.getElementById("nervous").className = "nervous show";
+			} else{
+				document.getElementById("nervous").className = "nervous"
+			}
+
+			if (countdownNumber >1 && countdownNumber <= 4) {
+				//I can't wait
+				document.getElementById("cant-wait").className = "cant-wait show";
+			} else{
+				document.getElementById("cant-wait").className = "cant-wait";
+			}
+
 			if (countdownNumber <= -1) {
 				changeState(3);
-			}
+			};
 		}, 1000);
 	} else if (state == 3) {
 		var success = setTimeout(function(){
