@@ -10,7 +10,7 @@ var changeState = function (state) {
 	if (state == 2) {
 		timer = setInterval(function () {countdownNumber = countdownNumber -1;
 			document.getElementById("countdown").innerHTML = countdownNumber;
-			
+			//get fucking rekt innerHTML, you suck, thanks, kbai
 			if(countdownNumber >4 && countdownNumber <= 7) {
 				//be nervous
 				document.getElementById("nervous").className = "nervous show";
