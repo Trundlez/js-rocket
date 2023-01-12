@@ -18,7 +18,9 @@
 		<div class="interface state2">
 			<h1 id="countdown">10</h1>
 			<a href="#" class="abortButton" 
-			onclick="changeState(1);">Abort!</a>
+			onclick='changeState(1), 
+			document.getElementById("nervous").className = "nervous",
+			document.getElementById("cant-wait").className = "cant-wait";'>Abort!</a>
 		</div>
 
 		<div class="interface state3">

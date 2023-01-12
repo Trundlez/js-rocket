@@ -14,7 +14,8 @@ var changeState = function (state) {
 			if(countdownNumber >4 && countdownNumber <= 7) {
 				//be nervous
 				document.getElementById("nervous").className = "nervous show";
-			}else{
+			}
+			else{
 				document.getElementById("nervous").className = "nervous"
 			}
 
